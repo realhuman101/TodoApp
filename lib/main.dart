@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(BaseApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class BaseApp extends StatelessWidget {
+  const BaseApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,25 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Text('Add and remove elements'),
-        )
-      )
+        ),
+        floatingActionButton: FloatingActionButton(onPressed: () {
+          
+        },),
+      ),
     );
+  }
+}
+
+class AppList extends StatefulWidget {
+  const AppList({super.key});
+
+  @override
+  State<AppList> createState() => _AppListState();
+}
+
+class _AppListState extends State<AppList> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
