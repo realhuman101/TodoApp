@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('To-Do App'),
-          backgroundColor: Color.fromARGB(0, 82, 172, 255),
+          backgroundColor: Color.fromARGB(255, 82, 171, 255),
         ),
         body: Container(
           child: Text('Add and remove elements'),
